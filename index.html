@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinform Online - Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="date-social">
+                    <div class="current-date" id="current-date"></div>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://cinformonline.com.br/wp-content/uploads/2023/05/logo-cinform-online-1.png" alt="Cinform Online Logo">
+                    </a>
+                </div>
+                <div class="header-ad">
+                    <div class="ad-placeholder">
+                        <span>Espaço para publicidade</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" class="category-link" data-category="noticias">Notícias</a></li>
+                    <li><a href="#" class="category-link" data-category="politica">Política</a></li>
+                    <li><a href="#" class="category-link" data-category="economia">Economia</a></li>
+                    <li><a href="#" class="category-link" data-category="esportes">Esportes</a></li>
+                    <li><a href="#" class="category-link" data-category="cultura">Cultura</a></li>
+                    <li><a href="#" class="category-link" data-category="entretenimento">Entretenimento</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                    <button id="search-button" aria-label="Buscar"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-news">
+            <div class="container">
+                <div class="featured-slider" id="featured-slider">
+                    <!-- Featured posts will be loaded here -->
+                    <div class="loading">Carregando destaques...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-news">
+            <div class="container">
+                <h2 class="section-title">Últimas Notícias</h2>
+                <div class="news-grid" id="latest-news-grid">
+                    <!-- Latest posts will be loaded here -->
+                    <div class="loading">Carregando notícias...</div>
+                </div>
+                <div class="load-more">
+                    <button id="load-more-btn">Carregar mais</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <div class="container">
+                <div class="category-columns">
+                    <div class="category-column">
+                        <h2 class="section-title">Política</h2>
+                        <div class="category-posts" id="politics-posts">
+                            <!-- Politics posts will be loaded here -->
+                            <div class="loading">Carregando política...</div>
+                        </div>
+                    </div>
+                    <div class="category-column">
+                        <h2 class="section-title">Economia</h2>
+                        <div class="category-posts" id="economy-posts">
+                            <!-- Economy posts will be loaded here -->
+                            <div class="loading">Carregando economia...</div>
+                        </div>
+                    </div>
+                    <div class="category-column">
+                        <h2 class="section-title">Esportes</h2>
+                        <div class="category-posts" id="sports-posts">
+                            <!-- Sports posts will be loaded here -->
+                            <div class="loading">Carregando esportes...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="sidebar">
+        <div class="container">
+            <div class="sidebar-widget">
+                <h3>Mais Lidas</h3>
+                <div class="popular-posts" id="popular-posts">
+                    <!-- Popular posts will be loaded here -->
+                    <div class="loading">Carregando posts populares...</div>
+                </div>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Publicidade</h3>
+                <div class="ad-placeholder">
+                    <span>Espaço para publicidade</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>Sobre o Cinform Online</h3>
+                        <p>Clone do Cinform Online, um portal de notícias de Sergipe. Este é um projeto de demonstração que consome a API do WordPress do site original.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <li><a href="#" class="category-link" data-category="noticias">Notícias</a></li>
+                            <li><a href="#" class="category-link" data-category="politica">Política</a></li>
+                            <li><a href="#" class="category-link" data-category="economia">Economia</a></li>
+                            <li><a href="#" class="category-link" data-category="esportes">Esportes</a></li>
+                            <li><a href="#" class="category-link" data-category="cultura">Cultura</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contato</h3>
+                        <p><i class="fas fa-envelope"></i> contato@exemplo.com</p>
+                        <p><i class="fas fa-phone"></i> (79) 9999-9999</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Aracaju, Sergipe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Cinform Online Clone - Criado para fins educacionais</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="post-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Post content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
